@@ -5,6 +5,15 @@ class user{
     private int salary;
     public String name;
 
+    public user(int age, int salary, String name) {
+//        this.age = age;
+//        this.salary = salary;
+//        this.name = name;
+        setAge(age);
+        setSalary(salary);
+        setName(name);
+    }
+
     public int getAge() {
         return age;
     }
@@ -48,10 +57,12 @@ class user{
  */
 public class encapTest {
     public static void main(String[] args) {
-        user u = new user();
-        u.setAge(100);
-        u.setSalary(30000);
-        u.setName("lisa");
+
+//        user u = new user();
+//        u.setAge(100);
+//        u.setSalary(30000);
+//        u.setName("lisa");
+        user u= new user(100,3000, "lisa");
         u.info();
     }
 }
