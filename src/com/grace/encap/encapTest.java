@@ -10,10 +10,16 @@ class user{
     }
 
     public void setAge(int age) {
-        this.age = age;
+        if(age>=1 && age<=90){
+            this.age = age;
+        }else{
+            System.out.println("输入的年龄不合法，给默认年龄1");
+            this.age = 1;
+        }
     }
 
     public int getSalary() {
+        //此处增加权限，谁可以查看薪水
         return salary;
     }
 
@@ -26,7 +32,12 @@ class user{
     }
 
     public void setName(String name) {
-        this.name = name;
+        if(name.length()>=2 && name.length()<=6){
+            this.name = name;
+        }else {
+            System.out.println("名字字符长度在2-6之间");
+            this.name = null;
+        }
     }
     public void info(){
         System.out.println("age:"+age+" salary:"+salary+" name:"+name);
