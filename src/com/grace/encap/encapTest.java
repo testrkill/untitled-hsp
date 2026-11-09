@@ -1,9 +1,9 @@
 package com.grace.encap;
 
 class user{
-    public int age;
+    private int age;
     private int salary;
-    public String name;
+    private String name;
 
     public user(int age, int salary, String name) {
 //        this.age = age;
