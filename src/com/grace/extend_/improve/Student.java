@@ -1,8 +1,12 @@
 package com.grace.extend_.improve;
 
 public class Student {
+
     public Student(){
-        System.out.println("Student()");
+        System.out.println("调用Student()");
+    }
+    public Student(String name){
+        System.out.println("调用Student(String name)");
     }
     public String name;
     public int age;
