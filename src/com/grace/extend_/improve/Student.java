@@ -1,6 +1,9 @@
 package com.grace.extend_.improve;
 
 public class Student {
+    public Student(){
+        System.out.println("Student()");
+    }
     public String name;
     public int age;
     private double score;
