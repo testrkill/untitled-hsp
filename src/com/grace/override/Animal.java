@@ -9,4 +9,8 @@ public class Animal {
     public Object m1(){
         return null;
     }
+
+    public void eat(){
+
+    }
 }
